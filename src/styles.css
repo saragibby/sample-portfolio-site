@@ -1,3 +1,94 @@
 /**
 * CSS file to hold styles that apply across the application
 */
+
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Montserrat:wght@200;400;600;800&display=swap");
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+
+div#main {
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  min-height: 100vh;
+  min-width: 100vw;
+  position: relative;
+  color: white;
+}
+
+section img {
+  width: 100vmax;
+  height: 100%;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  pointer-events: none;
+  object-fit: cover;
+}
+
+h1 {
+  font-weight: 300;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 7rem;
+  margin: 0;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 2rem;
+  margin: 0;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 1.25rem;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+p.large {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.container {
+  margin: 20px auto;
+  width: 600px;
+  height: 600px;
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 300px 300px;
+  grid-row: auto auto;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+.container .box {
+  /* background-color: white; */
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(204, 204, 204);
+}
+
+.container .box img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
