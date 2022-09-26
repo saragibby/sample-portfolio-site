@@ -19,13 +19,22 @@ div#main {
 }
 
 section {
-  min-height: 100vh;
-  min-width: 100vw;
   position: relative;
-  color: white;
 }
 
-section img {
+section.dark {
+  min-height: 100vh;
+  color: white;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+section.light {
+  color: black;
+  background: rgba(255, 255, 255, 0.35);
+  padding: 8rem 0;
+}
+
+section img.background {
   width: 100vmax;
   height: 100%;
   z-index: -1;
@@ -48,47 +57,60 @@ h2 {
   font-weight: 400;
   font-size: 2rem;
   margin: 0;
+  text-align: center;
 }
 
 h3 {
   font-weight: 400;
   font-size: 1.25rem;
+  margin: 0;
 }
 
 p {
-  font-size: 1.1rem;
+  font-size: 18px;
   line-height: 1.5;
+  margin-bottom: 0;
+  font-weight: 300;
 }
 
 p.large {
-  font-size: 1.5rem;
-  font-weight: 300;
+  font-size: 24px;
+}
+
+p.small {
+  font-size: 15px;
 }
 
 .container {
   margin: 20px auto;
-  width: 600px;
-  height: 600px;
-  background-color: #fff;
   display: grid;
-  grid-template-columns: 300px 300px;
-  grid-row: auto auto;
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
-}
-.container .box {
-  /* background-color: white; */
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  font-family: sans-serif;
-  display: flex;
-  flex-direction: column;
-  border: 1px solid rgb(204, 204, 204);
+  grid-template-columns: 330px 300px;
+  grid-gap: 20px;
 }
 
-.container .box img {
-  width: 100%;
-  border-radius: 10px 10px 0 0;
+.container .box {
+  border-radius: 10px;
+  padding: 24px 16px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  border: 1px solid rgb(204, 204, 204);
+  text-align: center;
+}
+
+hr {
+  margin: 2.5rem;
+}
+
+li {
+  line-height: 1.7;
+}
+
+li::marker {
+  color: #4e567e;
+}
+
+img.socialIcon {
+  width: 30px;
+  height: 30px;
 }
