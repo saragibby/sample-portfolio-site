@@ -27,7 +27,7 @@ const SITE_PROPS = {
   name: "Alexandrie Grenier",
   title: "Web Designer & Content Creator",
   email: "alex@example.com",
-  gitHub: "saragibby",
+  gitHub: "microsoft",
   instagram: "gibbette03",
   linkedIn: "saragibby",
   twitter: "saragibby",
